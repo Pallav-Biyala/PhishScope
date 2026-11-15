@@ -235,7 +235,7 @@ The website presents the project as a sequence of research episodes:
 
 It also includes interactive elements to help readers explore model behavior and understand the experimental findings.
 
-**Live Website:** `https://pallav-biyala.github.io/PhishScope/`
+**Live Website:** https://pallav-biyala.github.io/PhishScope/
 
 ---
 
