@@ -1,0 +1,369 @@
+/* =========================================
+   EPISODE 08 — CONCLUSION
+========================================= */
+
+
+/* =========================================
+   OBJECTIVE & FINAL WORD CARDS
+========================================= */
+
+.note-card {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    padding: 2.2rem 2.5rem;
+
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+/* Decorative top accent */
+
+.note-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        var(--green-dark),
+        var(--green),
+        #a8d8bf
+    );
+}
+
+/* Card label */
+
+.note-card > span {
+    display: block;
+    margin-bottom: 1.3rem;
+
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+/* Card paragraphs */
+
+.note-card > p {
+    max-width: 950px;
+    margin: 0 0 1.2rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.note-card > p:last-child {
+    margin-bottom: 0;
+}
+
+/* Final word gets a slightly different treatment */
+
+.conclusion-list + .note-card {
+    margin-top: 3rem;
+    background: #fbfdfb;
+}
+
+.conclusion-list + .note-card > p:last-child {
+    margin-top: 1.7rem;
+    padding: 1.3rem 1.5rem;
+
+    background: var(--mint);
+    border-left: 3px solid var(--green);
+    border-radius: 0 10px 10px 0;
+
+    color: var(--green-dark);
+    font-weight: 500;
+}
+
+
+/* =========================================
+   CONCLUSION CARD LIST
+========================================= */
+
+.conclusion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+
+    margin-top: 3rem;
+}
+
+
+/* =========================================
+   INDIVIDUAL CONCLUSION CARDS
+========================================= */
+
+.conclusion-card {
+    position: relative;
+
+    width: 100%;
+    padding: 2rem 2.2rem;
+
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.conclusion-card:hover {
+    border-color: #b9d8c8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(23, 107, 80, 0.06);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.conclusion-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Number badge */
+
+.conclusion-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 48px;
+    height: 48px;
+
+    background: var(--mint);
+    border: 1px solid #c7e5d5;
+    border-radius: 12px;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+/* Header kicker */
+
+.conclusion-kicker {
+    display: block;
+    margin-bottom: 0.35rem;
+
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+/* Header title */
+
+.conclusion-header h3 {
+    margin: 0;
+
+    color: var(--ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.conclusion-content {
+    padding-top: 1.5rem;
+}
+
+.conclusion-content > p {
+    max-width: 950px;
+    margin: 0 0 1.15rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.89rem;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   KEY TAKEAWAY
+========================================= */
+
+.conclusion-takeaway {
+    margin-top: 1.6rem;
+    padding: 1.25rem 1.5rem;
+
+    background: var(--mint);
+    border: 1px solid #cce6d8;
+    border-left: 4px solid var(--green);
+    border-radius: 0 10px 10px 0;
+}
+
+.conclusion-takeaway > span {
+    display: block;
+    margin-bottom: 0.6rem;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.conclusion-takeaway > p {
+    max-width: 900px;
+    margin: 0;
+
+    color: var(--green-dark);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 1.85;
+}
+
+
+/* =========================================
+   FUTURE DIRECTIONS BLOCK
+========================================= */
+
+.conclusion-example {
+    margin: 1.5rem 0;
+    padding: 1.4rem 1.5rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.conclusion-example-label {
+    display: block;
+    margin-bottom: 1rem;
+
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+   FUTURE DIRECTIONS LIST
+========================================= */
+
+.conclusion-evidence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+
+    margin: 0;
+    padding-left: 1.2rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.86rem;
+    line-height: 1.8;
+}
+
+.conclusion-evidence-list li {
+    padding-left: 0.3rem;
+}
+
+.conclusion-evidence-list strong {
+    color: var(--green-dark);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 700px) {
+
+    .note-card {
+        padding: 1.6rem 1.3rem;
+    }
+
+    .note-card > p {
+        font-size: 0.86rem;
+        line-height: 1.85;
+    }
+
+    .conclusion-list {
+        gap: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    .conclusion-card {
+        padding: 1.4rem 1.2rem;
+    }
+
+    .conclusion-header {
+        align-items: flex-start;
+        gap: 0.9rem;
+    }
+
+    .conclusion-number {
+        width: 42px;
+        height: 42px;
+        font-size: 0.85rem;
+    }
+
+    .conclusion-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .conclusion-content > p {
+        font-size: 0.86rem;
+    }
+
+    .conclusion-takeaway {
+        padding: 1.1rem;
+    }
+
+    .conclusion-example {
+        padding: 1.1rem;
+    }
+
+    .conclusion-list + .note-card {
+        margin-top: 2rem;
+    }
+}
+
+.final-transition {
+    margin-top: 3rem;
+    text-align: center;
+    background: var(--mint);
+    border-color: #cce6d8;
+}
+
+.final-transition h3 {
+    color: var(--green-dark);
+}
+
+.final-transition .episode-transition-next {
+    justify-content: center;
+}

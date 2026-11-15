@@ -1,0 +1,1811 @@
+[
+    {
+        "experiment_id": "a48f8e1e-eb07-440b-b1b5-1798b2ce2d42",
+        "model": "Logistic Regression",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "C": 1.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": null,
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "f47a40dc-e81a-4787-a84a-18f398bf29ff",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.4700994491577148,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9969540259394198,
+        "test_phishing_recall": 0.9941305212892957,
+        "test_phishing_precision": 0.9996998799519808,
+        "test_missed_phishing": 59,
+        "test_false_alarms": 3,
+        "test_confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "bc6ea0af-c8f6-4702-9aee-a920b7a95a3b",
+        "model": "Logistic Regression",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "C": 1.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": null,
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "f5105ea3-b411-4a84-8369-e342c81c3fac",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.594534158706665,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9969540259394198,
+        "test_phishing_recall": 0.9941305212892957,
+        "test_phishing_precision": 0.9996998799519808,
+        "test_missed_phishing": 59,
+        "test_false_alarms": 3,
+        "test_confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "94f12693-6acc-47ad-ac74-a36810466ba1",
+        "model": "Logistic Regression",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "C": 1.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": null,
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "878c9f21-6c06-443f-8202-b9a3ee6d3ad9",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.8780310153961182,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9970259591281811,
+        "test_balanced_accuracy": 0.9966067476190918,
+        "test_phishing_recall": 0.9937325905292479,
+        "test_phishing_precision": 0.9992997198879552,
+        "test_missed_phishing": 63,
+        "test_false_alarms": 7,
+        "test_confusion_matrix": [
+            [
+                9989,
+                63
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "d788481d-d044-40cd-8737-31edabfd7761",
+        "model": "Logistic Regression",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "C": 1.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": null,
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "0bd736f6-a5bf-453a-a6d9-a8d62a7ddfd1",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.8870429992675781,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9993627055274674,
+        "test_balanced_accuracy": 0.9993171953745602,
+        "test_phishing_recall": 0.9990051730998806,
+        "test_phishing_precision": 0.9995023390066686,
+        "test_missed_phishing": 10,
+        "test_false_alarms": 5,
+        "test_confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "58785dd5-f82e-4a6f-a0bc-51c71aee6ec9",
+        "model": "Logistic Regression",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "C": 1.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": null,
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "fbdf31b8-2d2e-413c-b38b-76c12d1db940",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.6248791217803955,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999150274036623,
+        "test_balanced_accuracy": 0.9999005173099881,
+        "test_phishing_recall": 0.9998010346199762,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 2,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "a8aa9a8a-7016-48f2-bab4-673418d9d386",
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "penalty": "l2",
+            "C": 100.0,
+            "solver": "lbfgs",
+            "max_iter": 1000
+        },
+        "selected_experiment_id": "ade20aaa-6954-4b27-beef-e99f367bd60b",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.8437697887420654,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9969286997195599,
+        "test_phishing_recall": 0.9939315559092717,
+        "test_phishing_precision": 0.9998999199359487,
+        "test_missed_phishing": 61,
+        "test_false_alarms": 1,
+        "test_confusion_matrix": [
+            [
+                9991,
+                61
+            ],
+            [
+                1,
+                13484
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "9460493e-b080-484d-976e-556df7f39c8d",
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "penalty": "l2",
+            "C": 1000.0,
+            "solver": "lbfgs",
+            "max_iter": 1000
+        },
+        "selected_experiment_id": "f3d11542-b132-4dc9-bcd2-7f8f0ebb1b18",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.765007495880127,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973233632153631,
+        "test_balanced_accuracy": 0.9968916214844838,
+        "test_phishing_recall": 0.9939315559092717,
+        "test_phishing_precision": 0.9997998599019313,
+        "test_missed_phishing": 61,
+        "test_false_alarms": 2,
+        "test_confusion_matrix": [
+            [
+                9991,
+                61
+            ],
+            [
+                2,
+                13483
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "1ef35e89-0d2c-4c67-8997-4829d452f302",
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "penalty": "l2",
+            "C": 1000.0,
+            "solver": "lbfgs",
+            "max_iter": 1000
+        },
+        "selected_experiment_id": "5013c54d-73c3-45b4-a706-393a6d371dd4",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.8374786376953125,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.99706844542635,
+        "test_balanced_accuracy": 0.9966438258541679,
+        "test_phishing_recall": 0.9937325905292479,
+        "test_phishing_precision": 0.9993996998499249,
+        "test_missed_phishing": 63,
+        "test_false_alarms": 6,
+        "test_confusion_matrix": [
+            [
+                9989,
+                63
+            ],
+            [
+                6,
+                13479
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "d42352de-8285-41aa-924a-2b52538d7bc3",
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "penalty": "l2",
+            "C": 1000.0,
+            "solver": "lbfgs",
+            "max_iter": 1000
+        },
+        "selected_experiment_id": "a51cb424-7f64-4860-b920-888a843ae313",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.7817378044128418,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9993627055274674,
+        "test_balanced_accuracy": 0.9993171953745602,
+        "test_phishing_recall": 0.9990051730998806,
+        "test_phishing_precision": 0.9995023390066686,
+        "test_missed_phishing": 10,
+        "test_false_alarms": 5,
+        "test_confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "5c2a45e8-4790-424f-b2ac-0672e8c13023",
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "penalty": "l2",
+            "C": 100.0,
+            "solver": "lbfgs",
+            "max_iter": 1000
+        },
+        "selected_experiment_id": "3bc24fbe-d633-4483-a080-70aae95e8557",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.6550958156585693,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999150274036623,
+        "test_balanced_accuracy": 0.9999005173099881,
+        "test_phishing_recall": 0.9998010346199762,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 2,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "0ab3d53a-29b5-4254-a117-4f098e957251",
+        "model": "Linear SVM",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "C": 100.0,
+            "max_iter": 3000
+        },
+        "selected_experiment_id": "9fa64dc5-ad4a-40a5-a818-751a18babed9",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 11.640144109725952,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9969160366096299,
+        "test_phishing_recall": 0.9938320732192598,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 62,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                9990,
+                62
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "3e77a3b2-05f2-48e9-a7aa-f65ee793be80",
+        "model": "Linear SVM",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "C": 100.0,
+            "max_iter": 3000
+        },
+        "selected_experiment_id": "4a292fed-3514-4d25-97ae-77d2f1cf13d4",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 13.505707025527954,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9969160366096299,
+        "test_phishing_recall": 0.9938320732192598,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 62,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                9990,
+                62
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "c830f63d-4419-4dda-b643-adf590a0f9e7",
+        "model": "Linear SVM",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "C": 1000.0,
+            "max_iter": 3000
+        },
+        "selected_experiment_id": "2058e99e-0e7c-4f3b-8056-dccfde4149ff",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 3.9420883655548096,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9972808769171942,
+        "test_balanced_accuracy": 0.996816553919618,
+        "test_phishing_recall": 0.993633107839236,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 64,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                9988,
+                64
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "02220c76-6ea4-40d7-8fe8-c3577464c2d8",
+        "model": "Linear SVM",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "C": 10.0,
+            "max_iter": 3000
+        },
+        "selected_experiment_id": "49f7a33e-118e-44e9-ab13-6a86cf89a4c5",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.8446414470672607,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9997875685091558,
+        "test_balanced_accuracy": 0.9997766194948301,
+        "test_phishing_recall": 0.9997015519299642,
+        "test_phishing_precision": 0.9998010148243955,
+        "test_missed_phishing": 3,
+        "test_false_alarms": 2,
+        "test_confusion_matrix": [
+            [
+                10049,
+                3
+            ],
+            [
+                2,
+                13483
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "185f9fa6-089f-4bf3-bf61-ae0953230bff",
+        "model": "Linear SVM",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "C": 0.01,
+            "max_iter": 3000
+        },
+        "selected_experiment_id": "7ff6f646-cbdc-4794-989e-88e0d9678d08",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.6364803314208984,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999575137018312,
+        "test_balanced_accuracy": 0.999950258654994,
+        "test_phishing_recall": 0.9999005173099881,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 1,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "ea4cf4d5-0634-442c-b484-2adc5b119467",
+        "model": "Decision Tree",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "ccp_alpha": 0.0,
+            "class_weight": null,
+            "criterion": "gini",
+            "max_depth": null,
+            "max_features": null,
+            "max_leaf_nodes": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "random_state": 42,
+            "splitter": "best"
+        },
+        "selected_experiment_id": "6bec0528-c448-4846-9f14-0d41a93b4017",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.6035654544830322,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9970259591281811,
+        "test_balanced_accuracy": 0.9966953893886016,
+        "test_phishing_recall": 0.9944289693593314,
+        "test_phishing_precision": 0.9986013986013986,
+        "test_missed_phishing": 56,
+        "test_false_alarms": 14,
+        "test_confusion_matrix": [
+            [
+                9996,
+                56
+            ],
+            [
+                14,
+                13471
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "0bfd7848-d69c-4b59-bf3a-580913ad826d",
+        "model": "Decision Tree",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "max_depth": null,
+            "min_samples_leaf": 2,
+            "criterion": "entropy"
+        },
+        "selected_experiment_id": "bf2e82b9-4edf-4f1d-b92e-05ddfec1b0db",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.9683163166046143,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9913327951735565,
+        "test_balanced_accuracy": 0.9913216863706575,
+        "test_phishing_recall": 0.9912455232789494,
+        "test_phishing_precision": 0.9884920634920635,
+        "test_missed_phishing": 88,
+        "test_false_alarms": 116,
+        "test_confusion_matrix": [
+            [
+                9964,
+                88
+            ],
+            [
+                116,
+                13369
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "0afa1647-2eda-43a4-b505-317172ba2702",
+        "model": "Decision Tree",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "max_depth": 20,
+            "min_samples_leaf": 1,
+            "criterion": "entropy"
+        },
+        "selected_experiment_id": "601b9ad6-c8e8-46ca-9857-2fe44db443fe",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 2.2460083961486816,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9960912605684666,
+        "test_balanced_accuracy": 0.9957657002275597,
+        "test_phishing_recall": 0.993533625149224,
+        "test_phishing_precision": 0.9973037747153984,
+        "test_missed_phishing": 65,
+        "test_false_alarms": 27,
+        "test_confusion_matrix": [
+            [
+                9987,
+                65
+            ],
+            [
+                27,
+                13458
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "008479c4-c4a5-4989-a394-43219eac8756",
+        "model": "Decision Tree",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "max_depth": null,
+            "min_samples_leaf": 2,
+            "criterion": "entropy"
+        },
+        "selected_experiment_id": "24c34407-1890-4fb1-a2a4-d4651c47500b",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 2.5932700634002686,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.999192760334792,
+        "test_balanced_accuracy": 0.9991562193243262,
+        "test_phishing_recall": 0.9989056904098687,
+        "test_phishing_precision": 0.9992039008856602,
+        "test_missed_phishing": 11,
+        "test_false_alarms": 8,
+        "test_confusion_matrix": [
+            [
+                10041,
+                11
+            ],
+            [
+                8,
+                13477
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "8d7b7060-5d85-4a46-829a-dfa9e3c058b5",
+        "model": "Decision Tree",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "max_depth": null,
+            "min_samples_leaf": 5,
+            "criterion": "gini"
+        },
+        "selected_experiment_id": "888a5709-1821-4d8a-8972-9123bc9d1512",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.7068979740142822,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 1.0,
+        "test_balanced_accuracy": 1.0,
+        "test_phishing_recall": 1.0,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 0,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "29104c1b-2f18-4e88-b32a-56cb76955372",
+        "model": "Random Forest",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 100,
+            "max_depth": 20,
+            "min_samples_leaf": 1,
+            "criterion": "gini",
+            "max_features": "sqrt"
+        },
+        "selected_experiment_id": "e057771f-f2f1-4c86-a2e8-f819b91d7838",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 7.550946474075317,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9967285550409993,
+        "test_balanced_accuracy": 0.9963978524132797,
+        "test_phishing_recall": 0.9941305212892957,
+        "test_phishing_precision": 0.9982019778243931,
+        "test_missed_phishing": 59,
+        "test_false_alarms": 18,
+        "test_confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                18,
+                13467
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "2b7bf8ac-0e16-4ce8-8a4b-cd11d8f6cbf9",
+        "model": "Random Forest",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "criterion": "gini",
+            "max_features": "sqrt"
+        },
+        "selected_experiment_id": "f7e3366c-92f8-49eb-bdab-ff04ed2f5c70",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 10.111472368240356,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9952840209032587,
+        "test_balanced_accuracy": 0.9951625186405553,
+        "test_phishing_recall": 0.9943294866693195,
+        "test_phishing_precision": 0.9946263309782067,
+        "test_missed_phishing": 57,
+        "test_false_alarms": 54,
+        "test_confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                54,
+                13431
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "67cdedd4-c420-4a70-8870-de6dd28f53df",
+        "model": "Random Forest",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "criterion": "gini",
+            "max_features": "sqrt"
+        },
+        "selected_experiment_id": "7e253397-6e9e-4749-ab7a-27d672fc24ba",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 19.5071120262146,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9966435824446616,
+        "test_balanced_accuracy": 0.9963363590530576,
+        "test_phishing_recall": 0.9942300039793076,
+        "test_phishing_precision": 0.9979031452820769,
+        "test_missed_phishing": 58,
+        "test_false_alarms": 21,
+        "test_confusion_matrix": [
+            [
+                9994,
+                58
+            ],
+            [
+                21,
+                13464
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "e67f8f7e-8154-4c07-abfd-df454508edd7",
+        "model": "Random Forest",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "bootstrap": true,
+            "ccp_alpha": 0.0,
+            "class_weight": null,
+            "criterion": "gini",
+            "max_depth": null,
+            "max_features": "sqrt",
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 100,
+            "n_jobs": -1,
+            "oob_score": false,
+            "random_state": 42,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "selected_experiment_id": "8d58a72a-4127-400f-9475-323a15f4dea4",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 12.65063190460205,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999150274036623,
+        "test_balanced_accuracy": 0.9999005173099881,
+        "test_phishing_recall": 0.9998010346199762,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 2,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "e7d04708-c803-4ef6-8345-6c74aad8b8b4",
+        "model": "Random Forest",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 100,
+            "max_depth": 10,
+            "min_samples_leaf": 5,
+            "criterion": "gini",
+            "max_features": "sqrt"
+        },
+        "selected_experiment_id": "d6d8a25d-0330-4b02-a106-0cacbe257f54",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 7.234390497207642,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999575137018312,
+        "test_balanced_accuracy": 0.999950258654994,
+        "test_phishing_recall": 0.9999005173099881,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 1,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "b8e04a83-95ce-490e-81fd-f09f49580675",
+        "model": "Gradient Boosting",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 7
+        },
+        "selected_experiment_id": "c1268fae-9225-4a30-b463-54fc66e6f9bd",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 75.6552529335022,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973658495135319,
+        "test_balanced_accuracy": 0.9970300045989995,
+        "test_phishing_recall": 0.9947274174293673,
+        "test_phishing_precision": 0.9991007194244604,
+        "test_missed_phishing": 53,
+        "test_false_alarms": 9,
+        "test_confusion_matrix": [
+            [
+                9999,
+                53
+            ],
+            [
+                9,
+                13476
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "994e8ff6-c1dc-43b0-91c0-3d4102da1df1",
+        "model": "Gradient Boosting",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 7
+        },
+        "selected_experiment_id": "7d78875a-7d7c-4baa-9db1-aefd7694ba54",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 124.17294049263,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9965161235501551,
+        "test_balanced_accuracy": 0.9962377874577595,
+        "test_phishing_recall": 0.9943294866693195,
+        "test_phishing_precision": 0.9975049900199601,
+        "test_missed_phishing": 57,
+        "test_false_alarms": 25,
+        "test_confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                25,
+                13460
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "e651c2ab-3c48-4a37-b7ef-82f4b668e7dc",
+        "model": "Gradient Boosting",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.1,
+            "max_depth": 7
+        },
+        "selected_experiment_id": "56d7692d-8d9a-475b-8e47-c80eaa069007",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 125.74998235702515,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9965586098483239,
+        "test_balanced_accuracy": 0.9962748656928355,
+        "test_phishing_recall": 0.9943294866693195,
+        "test_phishing_precision": 0.9976045513524304,
+        "test_missed_phishing": 57,
+        "test_false_alarms": 24,
+        "test_confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                24,
+                13461
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "17307701-e07b-44f3-aa28-29994a20d596",
+        "model": "Gradient Boosting",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 2
+        },
+        "selected_experiment_id": "b96dbc66-7cf2-43ef-9035-accbed44981d",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 83.35782074928284,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 1.0,
+        "test_balanced_accuracy": 1.0,
+        "test_phishing_recall": 1.0,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 0,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "bc2439fc-f0d1-4c73-be25-8733b034a566",
+        "model": "Gradient Boosting",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 50,
+            "learning_rate": 0.1,
+            "max_depth": 2
+        },
+        "selected_experiment_id": "2486dfa8-03be-4def-8651-79a3336265c8",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 19.897027730941772,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9998300548073247,
+        "test_balanced_accuracy": 0.9998010346199762,
+        "test_phishing_recall": 0.9996020692399522,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 4,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10048,
+                4
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "7b2f246c-1103-4bca-a607-fd8be0806e17",
+        "model": "AdaBoost",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "estimator": null,
+            "learning_rate": 1.0,
+            "n_estimators": 50,
+            "random_state": 42
+        },
+        "selected_experiment_id": "f03c737f-575c-40da-b01e-73402481fbc5",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 4.8346474170684814,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.8496834770786421,
+        "test_balanced_accuracy": 0.8325500574616739,
+        "test_phishing_recall": 0.7150815758058098,
+        "test_phishing_precision": 0.9142711778173492,
+        "test_missed_phishing": 2864,
+        "test_false_alarms": 674,
+        "test_confusion_matrix": [
+            [
+                7188,
+                2864
+            ],
+            [
+                674,
+                12811
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "7127495a-d445-4796-9105-f544db200ced",
+        "model": "AdaBoost",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "estimator": null,
+            "learning_rate": 1.0,
+            "n_estimators": 50,
+            "random_state": 42
+        },
+        "selected_experiment_id": "2ecf72c2-c49a-4262-bd83-ce03cb20f964",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 6.583338260650635,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.8701193864978545,
+        "test_balanced_accuracy": 0.8538670437639735,
+        "test_phishing_recall": 0.7424393155590927,
+        "test_phishing_precision": 0.9409910477871642,
+        "test_missed_phishing": 2589,
+        "test_false_alarms": 468,
+        "test_confusion_matrix": [
+            [
+                7463,
+                2589
+            ],
+            [
+                468,
+                13017
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "20d58a41-dc22-4398-a448-0c0e75e57d9b",
+        "model": "AdaBoost",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "estimator": null,
+            "learning_rate": 1.0,
+            "n_estimators": 50,
+            "random_state": 42
+        },
+        "selected_experiment_id": "1bbb4273-c9d7-4a53-8259-0f41f392b093",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 8.633036613464355,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9901431788248289,
+        "test_balanced_accuracy": 0.9896376771821014,
+        "test_phishing_recall": 0.9861719060883406,
+        "test_phishing_precision": 0.9907055766540076,
+        "test_missed_phishing": 139,
+        "test_false_alarms": 93,
+        "test_confusion_matrix": [
+            [
+                9913,
+                139
+            ],
+            [
+                93,
+                13392
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "ef88836f-81a3-4a84-ad50-00f2c15ea811",
+        "model": "AdaBoost",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "estimator": null,
+            "learning_rate": 1.0,
+            "n_estimators": 50,
+            "random_state": 42
+        },
+        "selected_experiment_id": "03c53768-f14c-4b88-a434-3fcc2c526f5e",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 13.21733546257019,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9993627055274674,
+        "test_balanced_accuracy": 0.9993171953745602,
+        "test_phishing_recall": 0.9990051730998806,
+        "test_phishing_precision": 0.9995023390066686,
+        "test_missed_phishing": 10,
+        "test_false_alarms": 5,
+        "test_confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "47be1a91-63df-42b7-b975-d3150da516e8",
+        "model": "AdaBoost",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "estimator": null,
+            "learning_rate": 1.0,
+            "n_estimators": 50,
+            "random_state": 42
+        },
+        "selected_experiment_id": "2fee65b6-170b-4423-a3e1-267a9520214d",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 14.833064317703247,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9999575137018312,
+        "test_balanced_accuracy": 0.999950258654994,
+        "test_phishing_recall": 0.9999005173099881,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 1,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "aff61c77-9869-4a80-b6f4-68dde1ab13c0",
+        "model": "XGBoost",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 7,
+            "subsample": 1.0
+        },
+        "selected_experiment_id": "7ee3929e-01a7-41bd-8aff-3a654cf2162a",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 3.1029093265533447,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9974083358117007,
+        "test_balanced_accuracy": 0.9970544197241455,
+        "test_phishing_recall": 0.9946279347393554,
+        "test_phishing_precision": 0.9993003498250874,
+        "test_missed_phishing": 54,
+        "test_false_alarms": 7,
+        "test_confusion_matrix": [
+            [
+                9998,
+                54
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "bac544c0-f5b0-4d83-bd2a-cd6866cf3cc7",
+        "model": "XGBoost",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 7,
+            "subsample": 1.0
+        },
+        "selected_experiment_id": "2a4bd484-a00c-47e4-b28a-b9911698d784",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.8102431297302246,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9972808769171942,
+        "test_balanced_accuracy": 0.9969051956891277,
+        "test_phishing_recall": 0.9943294866693195,
+        "test_phishing_precision": 0.9993001399720056,
+        "test_missed_phishing": 57,
+        "test_false_alarms": 7,
+        "test_confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "08c71fc6-3443-4f08-bc0e-efd039a9944d",
+        "model": "XGBoost",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 200,
+            "learning_rate": 0.2,
+            "max_depth": 7,
+            "subsample": 1.0
+        },
+        "selected_experiment_id": "374f4e22-d376-48cd-aa92-f8a9bc29de85",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 2.3512744903564453,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.9973233632153631,
+        "test_balanced_accuracy": 0.9969042845944138,
+        "test_phishing_recall": 0.9940310385992838,
+        "test_phishing_precision": 0.9996998499249625,
+        "test_missed_phishing": 60,
+        "test_false_alarms": 3,
+        "test_confusion_matrix": [
+            [
+                9992,
+                60
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "d0e4c8d0-4242-42c8-8281-75e7c6933541",
+        "model": "XGBoost",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 100,
+            "learning_rate": 0.2,
+            "max_depth": 2,
+            "subsample": 1.0
+        },
+        "selected_experiment_id": "1fcbe245-7069-4c49-89e7-3e1d5719d676",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 1.421290397644043,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 1.0,
+        "test_balanced_accuracy": 1.0,
+        "test_phishing_recall": 1.0,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 0,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "411be576-a5b8-48ce-a6a9-ae4e1b4ef276",
+        "model": "XGBoost",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Hyperparameter Tuning",
+        "hyperparameters": {
+            "n_estimators": 50,
+            "learning_rate": 0.1,
+            "max_depth": 7,
+            "subsample": 1.0
+        },
+        "selected_experiment_id": "cbd5fe34-9fdd-440b-8517-d194982f150d",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.953824520111084,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 1.0,
+        "test_balanced_accuracy": 1.0,
+        "test_phishing_recall": 1.0,
+        "test_phishing_precision": 1.0,
+        "test_missed_phishing": 0,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "9cb62d43-840d-4813-8af4-d8f6e9972570",
+        "model": "Majority Class",
+        "feature_set": "M1 - Lexical",
+        "n_features": 17,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+        },
+        "selected_experiment_id": "7782f40a-8280-487c-9dcd-220d395c47b0",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.010141372680664062,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.5729277308068148,
+        "test_balanced_accuracy": 0.5,
+        "test_phishing_recall": 0.0,
+        "test_phishing_precision": 0.0,
+        "test_missed_phishing": 10052,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "83564d39-447b-4b6f-a824-53accf7c25c0",
+        "model": "Majority Class",
+        "feature_set": "M2 - Derived",
+        "n_features": 20,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+        },
+        "selected_experiment_id": "4fa35811-a497-41e4-ba57-823bf6bfa751",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.006783723831176758,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.5729277308068148,
+        "test_balanced_accuracy": 0.5,
+        "test_phishing_recall": 0.0,
+        "test_phishing_precision": 0.0,
+        "test_missed_phishing": 10052,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "8d265804-25d2-47c4-856a-59421af80731",
+        "model": "Majority Class",
+        "feature_set": "M3 - URL Features",
+        "n_features": 21,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+        },
+        "selected_experiment_id": "71719cc1-b20d-4df8-9e31-09a919421208",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.006749391555786133,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.5729277308068148,
+        "test_balanced_accuracy": 0.5,
+        "test_phishing_recall": 0.0,
+        "test_phishing_precision": 0.0,
+        "test_missed_phishing": 10052,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "3ca3ac29-9518-46e0-9aca-a6c1720c6a09",
+        "model": "Majority Class",
+        "feature_set": "M4 - Page-aware",
+        "n_features": 49,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+        },
+        "selected_experiment_id": "78219e5f-139f-44c1-b12a-8fabcd7e31fe",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.0068340301513671875,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.5729277308068148,
+        "test_balanced_accuracy": 0.5,
+        "test_phishing_recall": 0.0,
+        "test_phishing_precision": 0.0,
+        "test_missed_phishing": 10052,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    {
+        "experiment_id": "feb9e964-7778-4bf1-97ec-8d197599c403",
+        "model": "Majority Class",
+        "feature_set": "M5 - All numeric",
+        "n_features": 50,
+        "experiment_type": "Baseline",
+        "hyperparameters": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+        },
+        "selected_experiment_id": "9831a2d1-f6d7-4d46-bc99-c57b3e0f3451",
+        "evaluation_split": "test",
+        "refit_on": "train+validation (90%)",
+        "training_time_seconds": 0.00919032096862793,
+        "converged": true,
+        "convergence_warning_messages": [],
+        "test_accuracy": 0.5729277308068148,
+        "test_balanced_accuracy": 0.5,
+        "test_phishing_recall": 0.0,
+        "test_phishing_precision": 0.0,
+        "test_missed_phishing": 10052,
+        "test_false_alarms": 0,
+        "test_confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "confusion_matrix_label_order": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    }
+]

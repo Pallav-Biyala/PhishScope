@@ -1,0 +1,812 @@
+{
+    "Logistic Regression | M1 - Lexical": {
+        "model": "Logistic Regression",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Logistic Regression | M2 - Derived": {
+        "model": "Logistic Regression",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Logistic Regression | M3 - URL Features": {
+        "model": "Logistic Regression",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9989,
+                63
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Logistic Regression | M4 - Page-aware": {
+        "model": "Logistic Regression",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Logistic Regression | M5 - All numeric": {
+        "model": "Logistic Regression",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Ridge Logistic Regression | M1 - Lexical": {
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9991,
+                61
+            ],
+            [
+                1,
+                13484
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Ridge Logistic Regression | M2 - Derived": {
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9991,
+                61
+            ],
+            [
+                2,
+                13483
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Ridge Logistic Regression | M3 - URL Features": {
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9989,
+                63
+            ],
+            [
+                6,
+                13479
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Ridge Logistic Regression | M4 - Page-aware": {
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Ridge Logistic Regression | M5 - All numeric": {
+        "model": "Ridge Logistic Regression",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Linear SVM | M1 - Lexical": {
+        "model": "Linear SVM",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9990,
+                62
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Linear SVM | M2 - Derived": {
+        "model": "Linear SVM",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9990,
+                62
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Linear SVM | M3 - URL Features": {
+        "model": "Linear SVM",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9988,
+                64
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Linear SVM | M4 - Page-aware": {
+        "model": "Linear SVM",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10049,
+                3
+            ],
+            [
+                2,
+                13483
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Linear SVM | M5 - All numeric": {
+        "model": "Linear SVM",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Decision Tree | M1 - Lexical": {
+        "model": "Decision Tree",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9996,
+                56
+            ],
+            [
+                14,
+                13471
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Decision Tree | M2 - Derived": {
+        "model": "Decision Tree",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9964,
+                88
+            ],
+            [
+                116,
+                13369
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Decision Tree | M3 - URL Features": {
+        "model": "Decision Tree",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9987,
+                65
+            ],
+            [
+                27,
+                13458
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Decision Tree | M4 - Page-aware": {
+        "model": "Decision Tree",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10041,
+                11
+            ],
+            [
+                8,
+                13477
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Decision Tree | M5 - All numeric": {
+        "model": "Decision Tree",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Random Forest | M1 - Lexical": {
+        "model": "Random Forest",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9993,
+                59
+            ],
+            [
+                18,
+                13467
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Random Forest | M2 - Derived": {
+        "model": "Random Forest",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                54,
+                13431
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Random Forest | M3 - URL Features": {
+        "model": "Random Forest",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9994,
+                58
+            ],
+            [
+                21,
+                13464
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Random Forest | M4 - Page-aware": {
+        "model": "Random Forest",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10050,
+                2
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Random Forest | M5 - All numeric": {
+        "model": "Random Forest",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Gradient Boosting | M1 - Lexical": {
+        "model": "Gradient Boosting",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9999,
+                53
+            ],
+            [
+                9,
+                13476
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Gradient Boosting | M2 - Derived": {
+        "model": "Gradient Boosting",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                25,
+                13460
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Gradient Boosting | M3 - URL Features": {
+        "model": "Gradient Boosting",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                24,
+                13461
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Gradient Boosting | M4 - Page-aware": {
+        "model": "Gradient Boosting",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Gradient Boosting | M5 - All numeric": {
+        "model": "Gradient Boosting",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10048,
+                4
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "AdaBoost | M1 - Lexical": {
+        "model": "AdaBoost",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                7188,
+                2864
+            ],
+            [
+                674,
+                12811
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "AdaBoost | M2 - Derived": {
+        "model": "AdaBoost",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                7463,
+                2589
+            ],
+            [
+                468,
+                13017
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "AdaBoost | M3 - URL Features": {
+        "model": "AdaBoost",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9913,
+                139
+            ],
+            [
+                93,
+                13392
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "AdaBoost | M4 - Page-aware": {
+        "model": "AdaBoost",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10042,
+                10
+            ],
+            [
+                5,
+                13480
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "AdaBoost | M5 - All numeric": {
+        "model": "AdaBoost",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10051,
+                1
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "XGBoost | M1 - Lexical": {
+        "model": "XGBoost",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                9998,
+                54
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "XGBoost | M2 - Derived": {
+        "model": "XGBoost",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                9995,
+                57
+            ],
+            [
+                7,
+                13478
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "XGBoost | M3 - URL Features": {
+        "model": "XGBoost",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                9992,
+                60
+            ],
+            [
+                3,
+                13482
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "XGBoost | M4 - Page-aware": {
+        "model": "XGBoost",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "XGBoost | M5 - All numeric": {
+        "model": "XGBoost",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                10052,
+                0
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Majority Class | M1 - Lexical": {
+        "model": "Majority Class",
+        "feature_set": "M1 - Lexical",
+        "confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Majority Class | M2 - Derived": {
+        "model": "Majority Class",
+        "feature_set": "M2 - Derived",
+        "confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Majority Class | M3 - URL Features": {
+        "model": "Majority Class",
+        "feature_set": "M3 - URL Features",
+        "confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Majority Class | M4 - Page-aware": {
+        "model": "Majority Class",
+        "feature_set": "M4 - Page-aware",
+        "confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    },
+    "Majority Class | M5 - All numeric": {
+        "model": "Majority Class",
+        "feature_set": "M5 - All numeric",
+        "confusion_matrix": [
+            [
+                0,
+                10052
+            ],
+            [
+                0,
+                13485
+            ]
+        ],
+        "labels": [
+            "Phishing (0)",
+            "Legitimate (1)"
+        ]
+    }
+}

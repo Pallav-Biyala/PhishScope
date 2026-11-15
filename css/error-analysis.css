@@ -1,0 +1,1205 @@
+/* =========================================================
+   EPISODE 06 — ERROR ANALYSIS
+   ========================================================= */
+
+/* Main introduction */
+.error-intro {
+    margin: 2rem 0 4rem;
+    padding: 1.5rem 1.8rem;
+    border-left: 3px solid var(--green);
+    background: var(--bg);
+    border-radius: 0 10px 10px 0;
+}
+
+.error-intro-label,
+.error-observation-label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--green);
+}
+
+
+
+.error-intro p {
+    margin: 0;
+    max-width: 850px;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   ANALYSIS PARTS
+   ========================================================= */
+
+.error-analysis-part {
+    margin: 4rem 0;
+}
+
+.error-part-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.error-part-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.error-part-kicker {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--green);
+}
+
+.error-part-heading h3 {
+    margin: 0.35rem 0;
+    font-size: 1.8rem;
+}
+
+.error-part-heading p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MODEL ANALYSIS CARDS
+   ========================================================= */
+
+.error-model-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.error-model {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--paper);
+}
+
+.error-model-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.3rem 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.error-model-heading > span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 0.08em;
+}
+
+.error-model-heading h4 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.error-model-heading p {
+    margin: 0.3rem 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.error-model-content {
+    padding: 1.5rem;
+}
+
+.error-analysis-description {
+    max-width: 850px;
+    margin: 0 0 1.5rem;
+    line-height: 1.8;
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   PERFORMANCE METRIC CARDS
+   ========================================================= */
+
+.error-metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.error-metric-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg);
+}
+
+.error-metric-card > span {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+}
+
+.error-metric-card strong {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 650;
+    line-height: 1.2;
+    color: var(--green);
+}
+
+.error-metric-card small {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CONFUSION MATRIX
+   ========================================================= */
+
+.error-matrix-section {
+    margin: 2.5rem 0;
+}
+
+.error-matrix-section h5 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.error-matrix-section > p {
+    margin: 0 0 1.2rem;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.error-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.error-confusion-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.error-confusion-matrix th,
+.error-confusion-matrix td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+}
+
+.error-confusion-matrix thead th {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    background: var(--bg);
+}
+
+.error-confusion-matrix tbody th {
+    text-align: left;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.error-confusion-matrix td {
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+.error-confusion-matrix tr:last-child th,
+.error-confusion-matrix tr:last-child td {
+    border-bottom: none;
+}
+
+.error-confusion-matrix th:last-child,
+.error-confusion-matrix td:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   KEY OBSERVATION
+   ========================================================= */
+
+.error-observation {
+    margin-top: 2rem;
+    padding: 1.4rem 1.5rem;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--green);
+    border-radius: 0 10px 10px 0;
+    background: var(--mint);
+}
+
+.error-observation-label {
+    color: var(--green-dark);
+}
+
+.error-observation p {
+    margin: 0;
+    max-width: 900px;
+    font-size: 0.9rem;
+    line-height: 1.85;
+    color: var(--green-dark);
+}
+
+
+/* =========================================================
+   FEATURE SET ANALYSIS
+   ========================================================= */
+
+.error-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.error-feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.3rem 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper);
+}
+
+.error-feature-number {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.error-feature h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.error-feature p {
+    margin: 0.35rem 0 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.error-feature-content {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+    .error-metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .error-part-heading {
+        gap: 1rem;
+    }
+
+    .error-part-heading h3 {
+        font-size: 1.45rem;
+    }
+
+    .error-model-content {
+        padding: 1rem;
+    }
+
+    .error-model-heading {
+        padding: 1rem;
+    }
+
+    .error-metric-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.65rem;
+    }
+
+    .error-metric-card {
+        padding: 0.9rem;
+    }
+
+    .error-metric-card strong {
+        font-size: 1.4rem;
+    }
+
+    .error-confusion-matrix th,
+    .error-confusion-matrix td {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .error-observation {
+        padding: 1rem;
+    }
+}
+
+/* ============================================================
+   FEATURE SET AGGREGATE PERFORMANCE
+============================================================ */
+
+.error-feature-content {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.error-feature-content .error-matrix-section {
+    margin-top: 0;
+}
+
+.error-feature-content .error-matrix-section h5 {
+    margin-bottom: 8px;
+}
+
+.error-feature-content .error-matrix-section > p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 760px;
+}
+
+.error-feature-content .error-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+}
+
+.error-feature-content .error-confusion-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+    text-align: left;
+}
+
+.error-feature-content .error-confusion-matrix th {
+    padding: 16px 18px;
+    background: var(--sidebar);
+    color: #fff;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.error-feature-content .error-confusion-matrix td {
+    padding: 17px 18px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.error-feature-content .error-confusion-matrix tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.error-feature-content .error-confusion-matrix tbody tr:hover {
+    background: var(--bg);
+}
+
+.error-feature-content .error-confusion-matrix td:first-child {
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+}
+
+.error-feature-content .error-confusion-matrix td small {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+/* ============================================================
+   PERFORMANCE OBSERVATIONS
+============================================================ */
+
+.error-performance-section {
+    margin-top: 24px;
+    padding: 24px 26px;
+    width: 100%;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+.error-performance-section h5 {
+    margin-bottom: 16px;
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.error-performance-section p {
+    max-width: 850px;
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 14px;
+}
+
+.error-performance-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   FEATURE CORRELATION LIST
+============================================================ */
+
+.error-feature-correlation-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 16px;
+
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 24px;
+    max-width: 850px;
+}
+
+.error-feature-correlation-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 12px 15px;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.error-feature-correlation-list li strong {
+    color: var(--green-dark);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 650px) {
+    .error-feature-correlation-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   EPISODE 06 — PART THREE
+   REPRESENTATIVE ERROR ANALYSIS
+   ========================================================= */
+
+
+/* MAIN WRAPPER */
+
+.error-analysis-part {
+    margin: 4rem 0;
+    color: var(--ink);
+}
+
+.error-analysis-part * {
+    box-sizing: border-box;
+}
+
+
+/* PART HEADING — SAME AS PART ONE AND TWO */
+
+.error-analysis-part .error-part-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.error-analysis-part .error-part-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    min-width: 48px;
+    height: 48px;
+
+    border: 1px solid var(--line);
+    border-radius: 50%;
+
+    color: var(--green-dark);
+    background: var(--paper);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.error-analysis-part .error-part-kicker {
+    display: block;
+    color: var(--green);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.error-analysis-part .error-part-heading h3 {
+    margin: 0.35rem 0;
+
+    color: var(--ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.error-analysis-part .error-part-heading p {
+    margin: 0;
+    max-width: 850px;
+
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* INTRODUCTION */
+
+.error-analysis-part .error-introduction {
+    margin: 2rem 0 3rem;
+    padding: 1.5rem 1.8rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--green);
+    border-radius: 0 10px 10px 0;
+}
+
+.error-analysis-part .error-introduction p {
+    max-width: 950px;
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+
+/* NUMBERED ANALYSIS CARDS */
+
+.error-analysis-part .error-performance-section {
+    margin: 2rem 0;
+    padding: 1.8rem 2rem;
+
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+.error-analysis-part .error-analysis-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    margin-bottom: 1rem;
+
+    background: var(--mint);
+    border-radius: 8px;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.error-analysis-part .error-performance-section h4 {
+    margin: 0 0 1rem;
+
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.error-analysis-part .error-performance-section p {
+    max-width: 900px;
+    margin: 0 0 1rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.9;
+}
+
+.error-analysis-part .error-performance-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* GENERAL STATISTICS */
+
+.error-analysis-part .error-stat-grid,
+.error-analysis-part .error-https-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+
+    margin: 1.7rem 0 2rem;
+}
+
+.error-analysis-part .error-stat-card,
+.error-analysis-part .error-https-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.65rem;
+
+    min-height: 135px;
+    padding: 1.4rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.error-analysis-part .error-stat-card:hover,
+.error-analysis-part .error-https-card:hover {
+    transform: translateY(-3px);
+    border-color: #b8d3c2;
+}
+
+.error-analysis-part .error-stat-value,
+.error-analysis-part .error-https-value {
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.error-analysis-part .error-stat-label,
+.error-analysis-part .error-https-label {
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+
+/* TABLES */
+
+.error-analysis-part .error-table-wrapper {
+    width: 100%;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper);
+}
+
+.error-analysis-part table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    text-align: left;
+}
+
+.error-analysis-part thead {
+    background: #edf4ef;
+}
+
+.error-analysis-part th {
+    padding: 1rem 1.1rem;
+
+    color: var(--green-dark);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.error-analysis-part td {
+    padding: 0.95rem 1.1rem;
+
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    line-height: 1.6;
+}
+
+.error-analysis-part tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.error-analysis-part tbody tr:hover {
+    background: #f7faf7;
+}
+
+.error-analysis-part td:first-child {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+
+/* EXAMPLE SECTIONS */
+
+.error-analysis-part .error-examples-section {
+    margin: 2.5rem 0;
+    padding: 1.8rem 2rem;
+
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+.error-analysis-part .error-examples-section h4 {
+    margin: 0 0 1rem;
+
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.error-analysis-part .error-examples-section p {
+    max-width: 900px;
+    margin: 0 0 1rem;
+
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.9;
+}
+
+
+/* DEFANGED URL EXPLANATION */
+
+.error-analysis-part .error-defang-note {
+    margin: 1.2rem 0 !important;
+    padding: 0.85rem 1rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+
+    color: var(--muted);
+    font-size: 0.75rem !important;
+    line-height: 1.7 !important;
+}
+
+
+/* URL LIST */
+
+.error-analysis-part .error-url-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+
+    margin: 1.4rem 0;
+}
+
+.error-analysis-part .error-url-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+
+    min-width: 0;
+    padding: 0.9rem 1rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.error-analysis-part .error-url-item:hover {
+    background: #edf4ef;
+    border-color: #c5d8cc;
+}
+
+.error-analysis-part .error-url-item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background: var(--mint);
+    border-radius: 6px;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.error-analysis-part .error-url-item code {
+    min-width: 0;
+
+    color: var(--ink);
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+    line-height: 1.8;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* KEY OBSERVATION */
+
+.error-analysis-part .error-observation {
+    margin-top: 1.8rem;
+    padding: 1.35rem 1.5rem;
+
+    background: var(--mint);
+    border: 1px solid #c8e5d6;
+    border-left: 3px solid var(--green);
+    border-radius: 0 10px 10px 0;
+}
+
+.error-analysis-part .error-observation-label {
+    display: block;
+    margin-bottom: 0.65rem;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.error-analysis-part .error-observation p {
+    max-width: 950px;
+    margin: 0;
+
+    color: var(--green-dark);
+    font-size: 0.85rem;
+    line-height: 1.85;
+}
+
+
+/* FINAL OBSERVATION */
+
+.error-analysis-part .error-final-observation {
+    position: relative;
+    overflow: hidden;
+
+    margin: 3rem 0 1rem;
+    padding: 2.2rem 2.4rem;
+
+    background: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    border-radius: 12px;
+
+    box-shadow: 0 10px 28px rgba(15, 79, 59, 0.12);
+}
+
+.error-analysis-part .error-final-observation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #8ac5a5;
+}
+
+.error-analysis-part .error-final-observation .error-observation-label {
+    margin-bottom: 0.9rem;
+    color: #a9d9bd;
+}
+
+.error-analysis-part .error-final-observation h4 {
+    margin: 0 0 1rem;
+
+    color: #ffffff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.error-analysis-part .error-final-observation p {
+    max-width: 1000px;
+    margin: 0 0 1rem;
+
+    color: #edf5ef;
+    font-size: 0.88rem;
+    line-height: 1.9;
+}
+
+.error-analysis-part .error-final-observation p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .error-analysis-part .error-stat-grid,
+    .error-analysis-part .error-https-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .error-analysis-part .error-url-list {
+        grid-template-columns: 1fr;
+    }
+
+    .error-analysis-part .error-performance-section,
+    .error-analysis-part .error-examples-section {
+        padding: 1.5rem;
+    }
+
+    .error-analysis-part .error-final-observation {
+        padding: 1.8rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .error-analysis-part .error-part-heading {
+        gap: 1rem;
+    }
+
+    .error-analysis-part .error-part-number {
+        min-width: 42px;
+        height: 42px;
+    }
+
+    .error-analysis-part .error-part-heading h3 {
+        font-size: 1.45rem;
+    }
+
+    .error-analysis-part .error-stat-grid,
+    .error-analysis-part .error-https-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .error-analysis-part .error-performance-section,
+    .error-analysis-part .error-examples-section {
+        padding: 1.2rem;
+    }
+
+    .error-analysis-part .error-final-observation {
+        padding: 1.4rem;
+    }
+}
+
+
+/* Error analysis accordion layout */
+.error-feature {
+    width: 100%;
+    display: block;
+}
+
+.error-feature .subsection-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.error-feature .subsection-toggle > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.error-feature .error-feature-number {
+    flex-shrink: 0;
+}
+
+.error-feature .toggle-arrow {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.error-feature .subsection-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error-feature .error-feature-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error-observation + .error-model-list {
+    margin-top: 2.5rem;
+}
+
+/* =========================================
+   M1–M5: PERFORMANCE & OBSERVATION STYLING
+========================================= */
+
+/* Performance observations card */
+.error-feature .error-performance-section {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.8rem 0 1.5rem;
+    padding: 1.6rem 1.8rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+/* Card heading */
+.error-feature .error-performance-section h5 {
+    margin: 0 0 1.2rem;
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+/* Card paragraphs */
+.error-feature .error-performance-section p {
+    max-width: 900px;
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+.error-feature .error-performance-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Key observation box */
+.error-feature .error-observation {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.8rem 0 0;
+    padding: 1.4rem 1.6rem;
+    background: var(--mint);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--green);
+    border-radius: 0 10px 10px 0;
+}
+
+/* Observation label */
+.error-feature .error-observation-label {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+/* Observation text */
+.error-feature .error-observation p {
+    max-width: 900px;
+    margin: 0;
+    color: var(--green-dark);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .error-feature .error-performance-section {
+        padding: 1.2rem;
+    }
+
+    .error-feature .error-observation {
+        padding: 1.1rem 1.2rem;
+    }
+}
+
+/* M1–M5 Feature Number Badge */
+.error-feature .error-feature-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+
+    border-radius: 50%;
+    background: var(--green);
+    color: #ffffff;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    box-shadow: 0 3px 10px rgba(0, 255, 174, 0.445);
+}
+
+/* Keep badge aligned properly */
+.error-feature .subsection-toggle {
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .error-feature .error-feature-number {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        font-size: 0.82rem;
+    }
+}

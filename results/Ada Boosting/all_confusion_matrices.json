@@ -1,0 +1,812 @@
+[
+  {
+    "experiment_id": "dc9fbe0e-1736-4cca-983e-701549e850f3",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        5830,
+        4222
+      ],
+      [
+        372,
+        13113
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "7bb30748-2ec1-413f-9af6-c9cb994f977a",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "a784e845-6f0e-4425-a375-e5612dd71de7",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6494,
+        3558
+      ],
+      [
+        544,
+        12941
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "9637937e-975e-4aab-aa5e-b06675daf91d",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "0870a04a-a0c8-4737-a087-687ed4888be5",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "f2497f62-8cff-402f-892b-ce0af665c0d9",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6911,
+        3141
+      ],
+      [
+        599,
+        12886
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "045922f5-a4b1-4f49-888f-456283ca07f3",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "270d5185-ec10-4339-8b8c-045504ccfe5a",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        6866,
+        3186
+      ],
+      [
+        590,
+        12895
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "932d5e5b-c57e-408e-9763-1d57c20348cd",
+    "feature_set": "M1 - Lexical",
+    "confusion_matrix": [
+      [
+        7076,
+        2976
+      ],
+      [
+        590,
+        12895
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "55517d3f-dbfa-4eff-82d8-fb37c040c678",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        5830,
+        4222
+      ],
+      [
+        372,
+        13113
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "a8df008a-fa5a-45f1-aaee-2275576608e5",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "b5457ce7-7c96-4ef2-8612-25f868d18de5",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6433,
+        3619
+      ],
+      [
+        443,
+        13042
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "78062a86-2574-46f3-9018-8d89d75e5310",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6324,
+        3728
+      ],
+      [
+        429,
+        13056
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "85774421-9273-4eb0-950b-cd88e865e6b7",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6433,
+        3619
+      ],
+      [
+        443,
+        13042
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "628d8a29-4524-4ab4-881f-1c65851da32c",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6913,
+        3139
+      ],
+      [
+        519,
+        12966
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "08525370-2e66-428e-8634-865454506b02",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6426,
+        3626
+      ],
+      [
+        443,
+        13042
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "42e9f00f-4fcc-47be-a6b6-c3222da75338",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        6739,
+        3313
+      ],
+      [
+        494,
+        12991
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "584e02d7-64a8-4755-ba83-7ea00eed7225",
+    "feature_set": "M2 - Derived",
+    "confusion_matrix": [
+      [
+        7114,
+        2938
+      ],
+      [
+        548,
+        12937
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "56f89712-e30e-43d8-a1ad-c1f7fd415546",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        8120,
+        1932
+      ],
+      [
+        22,
+        13463
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "ebb0f9fc-1fea-48af-99f7-f06317504711",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9337,
+        715
+      ],
+      [
+        371,
+        13114
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "868b1f90-f547-4543-a7cb-1fec692bcc37",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9337,
+        715
+      ],
+      [
+        371,
+        13114
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "a09682a7-ecfa-42ed-9d74-5af1c6d4e7c8",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9337,
+        715
+      ],
+      [
+        371,
+        13114
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "80659062-a3dc-4f48-bd03-1a7c49678755",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9263,
+        789
+      ],
+      [
+        74,
+        13411
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "209f4457-8e49-4cac-a3f1-eeb738910094",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9362,
+        690
+      ],
+      [
+        75,
+        13410
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "4bcedf0f-34c2-4c3d-867f-47181bb9b3dd",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9263,
+        789
+      ],
+      [
+        74,
+        13411
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "f085aeef-f2fa-4c6a-8955-c6670f3b5e35",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9360,
+        692
+      ],
+      [
+        75,
+        13410
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "adad0242-93d8-49e1-9d4c-b7800bb25b6a",
+    "feature_set": "M3 - URL Features",
+    "confusion_matrix": [
+      [
+        9531,
+        521
+      ],
+      [
+        75,
+        13410
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "e400fccc-2395-4c45-bc7f-af7e4fb69f27",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9924,
+        128
+      ],
+      [
+        127,
+        13358
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "4999b476-5434-4122-9f6f-dfa94beced03",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9979,
+        73
+      ],
+      [
+        45,
+        13440
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "832cfd8d-05ba-4b72-93c5-e7892806ce06",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9997,
+        55
+      ],
+      [
+        26,
+        13459
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "0f6606fc-5e7c-46c2-9a71-d9e9b5498760",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9980,
+        72
+      ],
+      [
+        50,
+        13435
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "4862cf77-5758-4115-a5bd-94d06286c83c",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9998,
+        54
+      ],
+      [
+        21,
+        13464
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "717c8552-c135-462b-b6e4-e5a52584e800",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        10019,
+        33
+      ],
+      [
+        10,
+        13475
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "e0687d89-8ad4-464a-9335-9640f23cbdaf",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        9994,
+        58
+      ],
+      [
+        22,
+        13463
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "57ef8d1f-7583-4e06-9dbe-284f3883c08b",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        10021,
+        31
+      ],
+      [
+        9,
+        13476
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "20609367-2ca6-40a1-a00e-03f53b2da2ac",
+    "feature_set": "M4 - Page-aware",
+    "confusion_matrix": [
+      [
+        10035,
+        17
+      ],
+      [
+        5,
+        13480
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "e43df96c-5562-43ad-a1da-e1d1960f3e87",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        9976,
+        76
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "3e28d556-c52a-427e-a77b-f0f4e3533788",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10045,
+        7
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "248c4a61-ac7c-4d8a-8ff5-43193ee73ec1",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10049,
+        3
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "56773ab4-b516-4d5c-90d8-43af9db08614",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10045,
+        7
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "98fd51bb-e164-4cc5-bb8a-32311dbd7160",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10051,
+        1
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "26506d5e-4605-42a8-993a-45bf7114aab0",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10051,
+        1
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "335aa731-44fb-465e-90d0-2892874e86e0",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10051,
+        1
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "d55f0f7d-2c0c-4923-a9cc-c08854ac47c2",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10051,
+        1
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  },
+  {
+    "experiment_id": "e8dfe97a-cfb1-480b-8ddf-b143dd3eb4ee",
+    "feature_set": "M5 - All numeric",
+    "confusion_matrix": [
+      [
+        10052,
+        0
+      ],
+      [
+        0,
+        13485
+      ]
+    ],
+    "class_labels": {
+      "0": "Phishing",
+      "1": "Legitimate"
+    }
+  }
+]

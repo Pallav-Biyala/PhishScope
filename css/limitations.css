@@ -1,0 +1,270 @@
+/* =========================================
+   EPISODE 07 — LIMITATIONS
+========================================= */
+
+.limitation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.limitation-card {
+    width: 100%;
+    padding: 2rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.limitation-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.limitation-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background: var(--green);
+    color: white;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.limitation-kicker {
+    display: block;
+    margin-bottom: 0.35rem;
+
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.limitation-header h3 {
+    margin: 0;
+    color: var(--ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+/* Main content */
+
+.limitation-content {
+    padding-top: 1.5rem;
+}
+
+.limitation-content > p {
+    max-width: 950px;
+    margin: 0 0 1.2rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.limitation-content code {
+    padding: 0.15rem 0.35rem;
+    background: var(--bg);
+    border-radius: 4px;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.85em;
+}
+
+/* Example blocks */
+
+.limitation-example {
+    margin: 1.6rem 0;
+    padding: 1.4rem 1.6rem;
+
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.limitation-example-label {
+    display: block;
+    margin-bottom: 1rem;
+
+    color: var(--green);
+    font-family: "DM Mono", monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.limitation-example p {
+    max-width: 900px;
+    margin: 0 0 0.9rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.87rem;
+    line-height: 1.85;
+}
+
+.limitation-example p:last-child {
+    margin-bottom: 0;
+}
+
+/* M3 vs M4/M5 comparison */
+
+.limitation-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.limitation-comparison-item {
+    padding: 1.2rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+}
+
+.limitation-comparison-item strong {
+    display: block;
+    margin-bottom: 0.6rem;
+
+    color: var(--green-dark);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+}
+
+.limitation-tag {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem 0.5rem;
+
+    background: var(--mint);
+    border-radius: 4px;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.limitation-comparison-item p {
+    margin: 0;
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.83rem;
+    line-height: 1.75;
+}
+
+/* EDA evidence list */
+
+.limitation-evidence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+    margin: 0;
+    padding-left: 1.2rem;
+
+    color: var(--muted);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.87rem;
+    line-height: 1.8;
+}
+
+.limitation-evidence-list li {
+    padding-left: 0.3rem;
+}
+
+.limitation-evidence-list strong {
+    color: var(--green-dark);
+}
+
+/* Key takeaway */
+
+.limitation-takeaway {
+    margin-top: 1.7rem;
+    padding: 1.3rem 1.5rem;
+
+    background: var(--mint);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--green);
+    border-radius: 0 10px 10px 0;
+}
+
+.limitation-takeaway span {
+    display: block;
+    margin-bottom: 0.65rem;
+
+    color: var(--green-dark);
+    font-family: "DM Mono", monospace;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.limitation-takeaway p {
+    max-width: 900px;
+    margin: 0;
+
+    color: var(--green-dark);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .limitation-card {
+        padding: 1.3rem;
+    }
+
+    .limitation-header {
+        align-items: flex-start;
+        gap: 0.9rem;
+    }
+
+    .limitation-number {
+        width: 42px;
+        height: 42px;
+        font-size: 0.85rem;
+    }
+
+    .limitation-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .limitation-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .limitation-example {
+        padding: 1.1rem;
+    }
+
+    .limitation-takeaway {
+        padding: 1.1rem;
+    }
+}
