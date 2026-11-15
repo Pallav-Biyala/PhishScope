@@ -1,4 +1,4 @@
-# PhishLab 🔍
+# PhishLab 🔍 (Live Website: https://pallav-biyala.github.io/PhishScope/)
 ### Understanding Phishing URL Detection Through Machine Learning
 
 PhishLab is a machine learning research project that investigates how effectively different machine learning algorithms can distinguish phishing URLs from legitimate URLs.
