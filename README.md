@@ -216,7 +216,7 @@ Open the notebooks in the `notebooks/` directory.
 
 **Important:** The notebooks use relative paths to access project data. Run them with the `notebooks/` directory as the working directory unless a notebook specifies otherwise.
 
-Execute the notebooks in numerical order to follow the research workflow.
+Execute the notebooks as instructed in the webiste's Epilogue.
 
 ---
 
@@ -235,7 +235,7 @@ The website presents the project as a sequence of research episodes:
 
 It also includes interactive elements to help readers explore model behavior and understand the experimental findings.
 
-**Live Website:** `<YOUR_GITHUB_PAGES_URL>`
+**Live Website:** `https://pallav-biyala.github.io/PhishScope/`
 
 ---
 
