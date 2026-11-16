@@ -1,11 +1,11 @@
-# PhishLab 🔍 
+# PhishScope  
 ## Live Website: https://pallav-biyala.github.io/PhishScope/
 
 ---
 
-### Understanding Phishing URL Detection Through Machine Learning
+### 🔍 Understanding Phishing URL Detection Through Machine Learning
 
-PhishLab is a machine learning research project that investigates how effectively different machine learning algorithms can distinguish phishing URLs from legitimate URLs.
+PhishScope is a machine learning research project that investigates how effectively different machine learning algorithms can distinguish phishing URLs from legitimate URLs.
 
 The project explores URL-based features, preprocessing strategies, model comparisons, evaluation results, and the limitations of automated phishing detection.
 
@@ -124,7 +124,7 @@ For a more detailed explanation of the results, model comparisons, and error ana
 ## 📁 Repository Structure
 
 ```text
-phishing_research_website/
+PhishScope/
 │
 ├── index.html
 │
@@ -236,15 +236,11 @@ Execution time may vary depending on your hardware and configuration.
 
 ### 4. Run the Research Website Locally
 
-The repository also contains a static, interactive website that presents the research methodology, experimental findings, error analysis, limitations, and reproducibility instructions.
+The repository contains a static, interactive website presenting the research methodology, experimental findings, model comparisons, error analysis, and conclusions.
 
-To launch it, navigate back to the project root directory:
+The website can be launched independently of the machine learning experiments.
 
-```bash
-cd ..
-```
-
-Start a local HTTP server:
+Open a terminal at the **project root directory** (the directory containing `index.html`) and execute:
 
 ```bash
 python -m http.server 8000
@@ -256,13 +252,17 @@ Open the following address in your browser:
 http://localhost:8000
 ```
 
-You can now explore the website and interact with its visualisations and research findings.
+You can now explore the research website and interact with its visualisations and findings.
 
-**Note:** The research website can be explored independently of the experiments. You do not need to execute any notebooks to view the website or inspect the results already included in the repository.
+**Note:** You do not need to execute any notebooks to view the website or inspect the experimental results already included in the repository.
 
-We have also provided code for two additional models: **Lasso Logistic Regression** and **RBF Kernel SVM**. These experiments can take considerably longer to execute. If you are interested in exploring their performance, you can run the corresponding code cells in the notebooks and compare their results with the other models.
+**Additional Models:** The repository also includes **Lasso Logistic Regression** and **RBF Kernel SVM**. Both models were evaluated using their default configurations as part of the baseline experiments, and their results are available in `results/Baseline Models/`.
 
-**Disclaimer:** These two models are not included in the website's reported results and therefore will not appear in its comparisons.
+The notebooks also contain optional hyperparameter-tuning code for these models. However, these tuning experiments were not included in the reported comparisons or the final testing stage. Consequently, neither model appears in the website's main model comparisons or final testing results. Both codes of these models are correct and can be ran and recorded if one curious to know how these both models to perform in our dataset.
+
+**Runtime Consideration:** These two models can be computationally expensive. In our experiments, individual baseline fits took approximately 1–6.5 minutes for Lasso Logistic Regression and 1–8 minutes for RBF Kernel SVM, depending on the feature configuration.
+
+If you want to execute the baseline experiments more quickly, you can skip these two models by commenting out their corresponding entries in the `baseline_models` dictionary before running the baseline experiment cell. Their optional tuning sections can also be skipped unless you specifically wish to investigate their performance.
 
 ---
 
