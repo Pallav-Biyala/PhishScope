@@ -318,17 +318,15 @@ The notebooks provide the implementation details, while the website communicates
 
 ## 🤖 AI Use Disclosure
 
-AI tools were used during the development of this project as supplementary assistants for code review, implementation support, debugging, and documentation.
+AI tools were used throughout the development of this project as supplementary assistants for learning, project planning, implementation, code review, debugging, experimentation, and documentation. Their contributions are outlined below.
 
-The tools used and their contributions are described below:
+- **Claude (Anthropic):** Used throughout the project as a tutor and reviewer. It helped with project planning and workflow design, suggested progressively larger feature sets that were developed into the M1–M5 configurations, assisted in interpreting experimental results and identifying inconsistencies, and suggested or adapted code for several helper steps, including experiment tracking, final refitting and testing, and error analysis. It also reviewed website content and reported numbers against experimental results and suggested outlines for some sections, which were subsequently rewritten and adapted.
 
-- **Claude:** Used to review our code against the project rubric and suggest potential improvements. We evaluated these suggestions and incorporated relevant changes based on our understanding of the requirements.
+- **Trae AI:** Used to generate the initial implementation of the interactive explorer in the Results & Analysis section of the website. The generated implementation was subsequently reviewed, modified, and corrected to meet the project's requirements.
 
-- **Trae AI:** Used to generate the initial implementation of the interactive explorer in the Results & Analysis section of the website. We subsequently reviewed, modified, and corrected the generated code to meet our requirements.
+- **ChatGPT (OpenAI):** Used throughout the project as a learning, planning, and development assistant. It helped us understand machine learning concepts, reason about experimental methodology and model choices, troubleshoot implementation issues, review code, interpret results, structure and refine the research website, and improve project documentation, including the README. It also provided guidance during various stages of the project, from initial planning to final submission.
 
-- **ChatGPT:** Used throughout the project as a learning and development assistant. Its assistance included discussing machine learning concepts and experimental decisions, troubleshooting implementation issues, reviewing code, refining documentation, and improving the research website.
-
-**Our Responsibility:** All AI-assisted outputs were reviewed and evaluated by us before being incorporated into the project. We made the final decisions regarding the methodology, implementation, experimental choices, and presentation of results. We remain responsible for the correctness, integrity, and conclusions of the submitted work.
+**Our Responsibility:** AI-generated suggestions and code were treated as assistance rather than authoritative solutions. We reviewed and evaluated the outputs before incorporating them, made the final decisions regarding methodology, implementation, experiments, and presentation, and took responsibility for running the experiments, checking their outputs, and verifying the submitted work and conclusions.
 
 ---
 
