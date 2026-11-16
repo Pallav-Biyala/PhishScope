@@ -1,9 +1,10 @@
-# PhishScope  
-## Live Website: https://pallav-biyala.github.io/PhishScope/
+# PhishScope
+
+**Live Website:** https://pallav-biyala.github.io/PhishScope/
 
 ---
 
-### 🔍 Understanding Phishing URL Detection Through Machine Learning
+## 🔍 Understanding Phishing URL Detection Through Machine Learning
 
 PhishScope is a machine learning research project that investigates how effectively different machine learning algorithms can distinguish phishing URLs from legitimate URLs.
 
@@ -18,6 +19,7 @@ The accompanying website presents the research as an interactive walkthrough, ma
 **How effectively can machine learning models distinguish phishing URLs from legitimate URLs using URL-related features, and how does the choice of feature representation affect their performance?**
 
 The project investigates:
+
 - Which URL characteristics help distinguish phishing from legitimate websites?
 - How do different feature groups influence classification performance?
 - How do linear models compare with tree-based and boosting algorithms?
@@ -35,19 +37,27 @@ This project uses the **PhiUSIIL Phishing URL (Website) Dataset**, obtained from
 | Dataset | PhiUSIIL Phishing URL (Website) |
 | Source | UCI Machine Learning Repository |
 | Original instances | 235,795 |
-| Features | 55 |
+| Original columns | 56 |
+| Feature columns | 54 |
+| Target label | 1 |
+| Identifier column | 1 (`FILENAME`) |
 | Instances used in this project | 235,370 |
+| Numeric input features used | 50 |
 | Classification task | Binary classification |
 | Labels | Phishing (0), Legitimate (1) |
 
-The project applies data preparation and cleaning before model development. The resulting dataset contains 235,370 observations.
+The original dataset contains 54 feature columns, one target label, and a `FILENAME` identifier column. During preprocessing, string-based columns are removed, leaving 50 numeric input features for model development.
 
-**Original dataset:**
+URL-level duplicate removal results in a working dataset containing **235,370 observations**.
+
+**Original Dataset:**  
 https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
 
-**Dataset citation:**
+**Original Research Paper:**
 
-Prasad, A., & Chandra, S. (2024). *PhiUSIIL Phishing URL (Website)*. UCI Machine Learning Repository. https://doi.org/10.1016/j.cose.2023.103545.
+Prasad, A., & Chandra, S. (2024). *PhiUSIIL: A diverse security profile empowered phishing URL detection framework based on similarity index and incremental learning.* Computers & Security, 136, 103545.
+
+https://doi.org/10.1016/j.cose.2023.103545
 
 The dataset is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Please retain appropriate attribution when redistributing it.
 
@@ -59,7 +69,7 @@ The project follows a structured machine learning workflow:
 
 1. **Exploratory Data Analysis:** Investigating feature distributions, class characteristics, relationships, and potential dataset issues.
 2. **Preprocessing:** Preparing the dataset and constructing different feature representations.
-3. **Model Evaluation:** Training and evaluating multiple machine learning algorithms on various metrics.
+3. **Model Evaluation:** Training and evaluating multiple machine learning algorithms across different feature configurations.
 4. **Results & Analysis:** Comparing model performance using classification metrics and confusion matrices.
 5. **Error Analysis:** Investigating model behavior and understanding classification errors.
 6. **Limitations:** Examining potential sources of bias, dataset artifacts, and generalization challenges.
@@ -76,11 +86,11 @@ Five feature configurations were explored:
 | M4 | Page-aware Features | 49 |
 | M5 | All Numeric Features | 50 |
 
-These configurations allow comparisons across different feature representations.
+These configurations allow comparisons across different feature representations and help investigate how feature selection influences model performance.
 
 ### Models Compared
 
-The experiments include:
+The main experiments include:
 
 - Majority Classifier
 - Logistic Regression
@@ -92,7 +102,9 @@ The experiments include:
 - AdaBoost
 - XGBoost
 
-Majority Classifier acts as baseline classifier for comparison.
+The Majority Classifier serves as a baseline against which the performance of the other models can be compared.
+
+Additional baseline experiments involving Lasso Logistic Regression and RBF Kernel SVM are documented separately in the repository.
 
 ---
 
@@ -113,9 +125,9 @@ Key files:
 
 | File | Description |
 |---|---|
-| `final_45_test_results.json` | Final testing results |
-| `final_45_test_confusion_matrices.json` | Confusion matrices |
-| `final_45_test_summary.csv` | Tabular summary of final tests |
+| `final_45_test_results.json` | Detailed final testing results |
+| `final_45_test_confusion_matrices.json` | Confusion matrices for the final tests |
+| `final_45_test_summary.csv` | Tabular summary of final testing results |
 
 For a more detailed explanation of the results, model comparisons, and error analysis, visit the PhishScope website.
 
@@ -255,11 +267,22 @@ You can now explore the research website and interact with its visualisations an
 
 **Note:** You do not need to execute any notebooks to view the website or inspect the experimental results already included in the repository.
 
-**Additional Models:** The repository also includes **Lasso Logistic Regression** and **RBF Kernel SVM**. Both models were evaluated using their default configurations as part of the baseline experiments, and their results are available in `results/Baseline Models/`.
+### Additional Models
 
-The notebooks also contain optional hyperparameter-tuning code for these models. However, these tuning experiments were not included in the reported comparisons or the final testing stage. Consequently, neither model appears in the website's main model comparisons or final testing results. Both codes of these models are correct and can be ran and recorded if one curious to know how these both models to perform in our dataset.
+The repository also includes **Lasso Logistic Regression** and **RBF Kernel SVM**. Both models were evaluated using their default configurations as part of the baseline experiments, and their results are available in `results/Baseline Models/`.
 
-**Runtime Consideration:** These two models can be computationally expensive. In our experiments, individual baseline fits took approximately 1–6.5 minutes for Lasso Logistic Regression and 1–8 minutes for RBF Kernel SVM, depending on the feature configuration.
+The notebooks also contain optional hyperparameter-tuning code for these models. However, these tuning experiments were not included in the reported tuning workflow or the final testing stage. Consequently, neither model appears in the website's main model comparisons or final testing results.
+
+The optional implementations are available for readers interested in investigating how these models perform on the dataset.
+
+### Runtime Consideration
+
+These two models can be computationally expensive. In our experiments, individual baseline fits took approximately:
+
+- **Lasso Logistic Regression:** 1–6.5 minutes.
+- **RBF Kernel SVM:** 1–8 minutes.
+
+The actual runtime depends on the feature configuration and hardware.
 
 If you want to execute the baseline experiments more quickly, you can skip these two models by commenting out their corresponding entries in the `baseline_models` dictionary before running the baseline experiment cell. Their optional tuning sections can also be skipped unless you specifically wish to investigate their performance.
 
@@ -271,17 +294,17 @@ The website presents the project as a sequence of research episodes:
 
 - The Problem Statement
 - Exploratory Data Analysis
-- Data preprocessing
+- Data Preprocessing
 - Methods & Model Evaluation
-- Results and analysis
-- Model and error analysis
+- Results and Analysis
+- Model and Error Analysis
 - Limitations
 - Conclusion
 - Reproducibility
 
 It also includes interactive elements to help readers explore model behavior and understand the experimental findings.
 
-**Live Website:** `https://pallav-biyala.github.io/PhishScope/`
+**Live Website:** https://pallav-biyala.github.io/PhishScope/
 
 ---
 
@@ -306,7 +329,7 @@ These limitations are important when interpreting model performance and consider
 The repository provides the resources required to inspect and reproduce the experiments:
 
 - Jupyter notebooks containing the analysis and model development.
-- The dataset and its documentation.
+- The dataset and its source citation.
 - Dependency specifications.
 - Saved model evaluation results.
 - Confusion matrices and final testing summaries.
@@ -334,6 +357,10 @@ AI tools were used throughout the development of this project as supplementary a
 We sincerely acknowledge the authors of the PhiUSIIL dataset and the UCI Machine Learning Repository for making the dataset available for research.
 
 **Dataset Authors:** Arvind Prasad and Shalini Chandra.
+
+We also acknowledge the original research paper:
+
+Prasad, A., & Chandra, S. (2024). *PhiUSIIL: A diverse security profile empowered phishing URL detection framework based on similarity index and incremental learning.* Computers & Security, 136, 103545.
 
 ---
 
