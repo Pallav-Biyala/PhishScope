@@ -175,7 +175,7 @@ phishing_research_website/
 
 ---
 
-## ⚙️ Installation and Setup
+## ⚙️ Installation, Setup & Reproduction
 
 ### Requirements
 
@@ -190,49 +190,90 @@ The experiments were developed using:
 
 The original development environment was Anaconda on Windows.
 
-### 1. Clone the repository
+Follow the steps below to set up the project, reproduce the experiments, and explore the research website locally.
+
+### 1. Clone the Repository
+
+Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone https://github.com/Pallav-Biyala/PhishScope.git
+cd PhishScope
 ```
 
-### 2. Create and activate an environment
+### 2. Install Dependencies
 
-Using Anaconda:
+The experiments were developed using Python 3.14.6 and the libraries specified in `requirements.txt`.
 
-```bash
-conda create -n phishlab python=3.14.6
-conda activate phishlab
-```
-
-### 3. Install dependencies
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Launch Jupyter Notebook
+If you do not already have Jupyter Notebook installed, install it using:
 
 ```bash
-jupyter notebook
+pip install notebook
 ```
 
-Open the notebooks in the `notebooks/` directory.
+### 3. Reproduce the Experiments
 
-**Important:** The notebooks use relative paths to access project data. Run them with the `notebooks/` directory as the working directory unless a notebook specifies otherwise.
+The repository contains seven notebooks covering exploratory analysis, preprocessing, model development, and evaluation.
 
-Execute the notebooks as instructed in the webiste's Epilogue.
+For reproducing the consolidated experimental results, execute the following notebooks in order:
+
+1. `06_all_models.ipynb` — Trains and evaluates the selected models across the different feature configurations.
+2. `07_model_comparison_and_testing_final.ipynb` — Performs the final comparative evaluation and testing.
+
+The earlier notebooks (`01`–`05`) document exploratory work and the development of individual modelling approaches. They are included for reference and do not need to be executed when reproducing the consolidated experiments.
+
+**Important:** The notebooks use relative paths to access project data and save experimental outputs. Open Jupyter Notebook with the `notebooks/` directory as the working directory before executing them.
+
+The experiments generate evaluation metrics, confusion matrices, and other outputs, which are saved in the corresponding directories under `results/`. Individual experiment runs are recorded separately to preserve their results.
+
+Execution time may vary depending on your hardware and configuration.
+
+### 4. Run the Research Website Locally
+
+The repository also contains a static, interactive website that presents the research methodology, experimental findings, error analysis, limitations, and reproducibility instructions.
+
+To launch it, navigate back to the project root directory:
+
+```bash
+cd ..
+```
+
+Start a local HTTP server:
+
+```bash
+python -m http.server 8000
+```
+
+Open the following address in your browser:
+
+```text
+http://localhost:8000
+```
+
+You can now explore the website and interact with its visualisations and research findings.
+
+**Note:** The research website can be explored independently of the experiments. You do not need to execute any notebooks to view the website or inspect the results already included in the repository.
+
+We have also provided code for two additional models: **Lasso Logistic Regression** and **RBF Kernel SVM**. These experiments can take considerably longer to execute. If you are interested in exploring their performance, you can run the corresponding code cells in the notebooks and compare their results with the other models.
+
+**Disclaimer:** These two models are not included in the website's reported results and therefore will not appear in its comparisons.
 
 ---
 
-## 🌐 PhishLab Website
+## 🌐 PhishScope Website
 
 The website presents the project as a sequence of research episodes:
 
-- Dataset exploration
+- The Problem Statement
+- Exploratory Data Analysis
 - Data preprocessing
-- Model development
+- Methods & Model Evaluation
 - Results and analysis
 - Model and error analysis
 - Limitations
@@ -277,16 +318,32 @@ The notebooks provide the implementation details, while the website communicates
 
 ## 🤖 AI Use Disclosure
 
-<!-- Add an accurate disclosure describing any AI tools used,
-the tasks they assisted with, and which parts were independently
-implemented, tested, and verified. -->
+AI tools were used during the development of this project as supplementary assistants for code review, implementation support, debugging, and documentation.
+
+The tools used and their contributions are described below:
+
+- **Claude:** Used to review our code against the project rubric and suggest potential improvements. We evaluated these suggestions and incorporated relevant changes based on our understanding of the requirements.
+
+- **Trae AI:** Used to generate the initial implementation of the interactive explorer in the Results & Analysis section of the website. We subsequently reviewed, modified, and corrected the generated code to meet our requirements.
+
+- **ChatGPT:** Used throughout the project as a learning and development assistant. Its assistance included discussing machine learning concepts and experimental decisions, troubleshooting implementation issues, reviewing code, refining documentation, and improving the research website.
+
+**Our Responsibility:** All AI-assisted outputs were reviewed and evaluated by us before being incorporated into the project. We made the final decisions regarding the methodology, implementation, experimental choices, and presentation of results. We remain responsible for the correctness, integrity, and conclusions of the submitted work.
 
 ---
 
 ## 📜 Acknowledgements
 
-We acknowledge the authors of the PhiUSIIL dataset and the UCI Machine Learning Repository for making the dataset available for research.
+We sincerely acknowledge the authors of the PhiUSIIL dataset and the UCI Machine Learning Repository for making the dataset available for research.
 
-**Dataset authors:** Arvind Prasad and Shalini Chandra.
+**Dataset Authors:** Arvind Prasad and Shalini Chandra.
 
 ---
+
+## 👨‍💻 Project Author
+
+**Pallav Biyala**  
+Undergraduate Student, IIT Gandhinagar  
+ES 335 — Machine Learning Project
+
+*PhishScope — Understanding Phishing Through Machine Learning.*
