@@ -35,7 +35,7 @@ This project uses the **PhiUSIIL Phishing URL (Website) Dataset**, obtained from
 | Dataset | PhiUSIIL Phishing URL (Website) |
 | Source | UCI Machine Learning Repository |
 | Original instances | 235,795 |
-| Features | 54 |
+| Features | 55 |
 | Instances used in this project | 235,370 |
 | Classification task | Binary classification |
 | Labels | Phishing (0), Legitimate (1) |
@@ -59,8 +59,8 @@ The project follows a structured machine learning workflow:
 
 1. **Exploratory Data Analysis:** Investigating feature distributions, class characteristics, relationships, and potential dataset issues.
 2. **Preprocessing:** Preparing the dataset and constructing different feature representations.
-3. **Model Development:** Training and comparing multiple machine learning algorithms.
-4. **Evaluation:** Comparing model performance using classification metrics and confusion matrices.
+3. **Model Evaluation:** Training and evaluating multiple machine learning algorithms on various metrics.
+4. **Results & Analysis:** Comparing model performance using classification metrics and confusion matrices.
 5. **Error Analysis:** Investigating model behavior and understanding classification errors.
 6. **Limitations:** Examining potential sources of bias, dataset artifacts, and generalization challenges.
 
@@ -82,6 +82,8 @@ These configurations allow comparisons across different feature representations.
 
 The experiments include:
 
+- Majority Classifier
+- Logistic Regression
 - Ridge Logistic Regression
 - Linear Support Vector Machine
 - Decision Trees
@@ -90,7 +92,7 @@ The experiments include:
 - AdaBoost
 - XGBoost
 
-A baseline classifier is also included for comparison.
+Majority Classifier acts as baseline classifier for comparison.
 
 ---
 
@@ -115,7 +117,7 @@ Key files:
 | `final_45_test_confusion_matrices.json` | Confusion matrices |
 | `final_45_test_summary.csv` | Tabular summary of final tests |
 
-For a more detailed explanation of the results, model comparisons, and error analysis, visit the PhishLab website.
+For a more detailed explanation of the results, model comparisons, and error analysis, visit the PhishScope website.
 
 ---
 
@@ -128,14 +130,14 @@ phishing_research_website/
 │
 ├── css/
 │   ├── main.css
-│   ├── style.css
 │   ├── data.css
 │   ├── preprocessing.css
 │   ├── methods.css
 │   ├── results.css
 │   ├── error-analysis.css
 │   ├── limitations.css
-│   └── conclusion.css
+│   ├── conclusion.css
+│   └── reproducibility.css
 │
 ├── js/
 │   ├── script.js
