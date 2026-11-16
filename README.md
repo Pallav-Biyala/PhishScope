@@ -146,8 +146,7 @@ PhishScope/
 ├── images/
 │
 ├── data/
-│   ├── PhiUSIIL_Phishing_URL_Dataset.csv
-│   └── Dataset Documentation.pdf
+│   └── PhiUSIIL_Phishing_URL_Dataset.csv
 │
 ├── notebooks/
 │   ├── 01_EDA.ipynb
